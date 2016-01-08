@@ -1,0 +1,23 @@
+<!doctype html>
+
+
+<html>
+   <head>
+      <title> Bits to Values Calculator </title>
+   </head>
+
+   <body>
+      <h2> Bits to Values Calculator </h2>
+      <p>
+         Enter number of Bits: <input type="text" id="bitbox" size=10 value="">
+         <br>
+      </p>
+         <input type="button" value="Calculate"
+            onclick="bits=parseFloat(document.getElementById('bitbox').value);
+            values=Math.pow(2,bits);
+            document.getElementById('outputDiv').innerHTML=
+            'With '+bits+' bits, you can represent '+values+' different values.';">
+      <hr>
+      <div id="outputDiv"></div>
+   </body>
+</html>

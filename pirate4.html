@@ -1,0 +1,87 @@
+<!doctype html>
+
+
+<html>
+   <head>
+      <title> Land Lubber's Pirate Translator </title>
+   </head>
+
+   <body>
+      <h2> Land Lubber's Pirate Translator </h2>
+      <img src="img/pirate1.jpg" alt = "PirateImage" height=300 width=200
+             onmouseover="this.src='img/pirate2.gif';"
+             onmouseout="this.src='img/pirate1.jpg;'">
+      <p>
+         Simply click on the buttons to translate words and/or phrases from English to pirate talk        
+         <br>
+            <table border="0">
+               <tr>
+                  <td>Greetings:</td>
+                  <td> <input type="button" value="hello"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' ahoy';"></td>
+                  <td> <input type="button" value="stranger"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' scurvy dog';"></td>
+               </tr>
+               <tr>
+                  <td>People:</td>
+                  <td> <input type="button" value="Sir"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' matey';"></td>
+                  <td> <input type="button" value="Madam"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' proud beauty';"></td>
+                  <td> <input type="button" value="Officer"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' foul blaggart';"></td>
+               </tr>
+               <tr>
+                  <td>Questions:</td>
+                  <td> <input type="button" value="where is"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' whar be';"></td>
+                  <td> <input type="button" value="can you help me find"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' know ye';"></td>
+                  <td> <input type="button" value="is that"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' be that';"></td>
+               </tr>
+               <td>Articles:</td>
+                  <td> <input type="button" value="The"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' th'';"></td>
+                  <td> <input type="button" value="My"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' me';"></td>
+                  <td> <input type="button" value="Your"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' yer';"></td>
+               </tr>
+               <td>Places:</td>
+                  <td> <input type="button" value="Restroom"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' head'';"></td>
+                  <td> <input type="button" value="Restaurant"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' galley';"></td>
+                  <td> <input type="button" value="Hotel"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' fleabag inn';"></td>
+               </tr>
+            </table>
+         <br> 
+          <input type="button" value="Clear"
+               onclick="document.getElementById('outputDiv').innerHTML=
+               '';"> 
+          <input type="button" value="Return"
+               onclick="document.getElementById('outputDiv').innerHTML=
+               '<br>';"> 
+      
+
+      </p>
+      <hr>
+         <div id="outputDiv"></div>     
+   </body>
+</html>

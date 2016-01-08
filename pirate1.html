@@ -1,0 +1,33 @@
+<!doctype html>
+
+
+<html>
+   <head>
+      <title> Land Lubber's Pirate Translator </title>
+   </head>
+
+   <body>
+      <h2> Land Lubber's Pirate Translator </h2>
+      <p>
+         Simply click on the buttons to translate words and/or phrases from English to pirate talk        
+         <br>
+         <input type="button" value="hello"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' ahoy';">
+         <input type="button" value="stranger"
+            onclick="document.getElementById('outputDiv').innerHTML=
+            document.getElementById('outputDiv').innerHTML + ' scurvy dog';">  
+         <br> 
+          <input type="button" value="Clear"
+               onclick="document.getElementById('outputDiv').innerHTML=
+               '';"> 
+         <input type="button" value="Return"
+               onclick="document.getElementById('outputDiv').innerHTML=
+               '<br>';"> 
+      
+
+      </p>
+      <hr>
+         <div id="outputDiv"></div>     
+   </body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+
+
+<html>
+   <head>
+      <title> Month to Second Calculator </title>
+   </head>
+
+   <body>
+      <h2> Month to Second Calculator </h2>
+      <p>
+         Enter the months: <input type="text" id="monthBox" size=10 value="">
+         <br>
+         Assume each month has 30 days
+      </p>
+         <input type="button" value="Calculate"
+            onclick="month=parseFloat(document.getElementById('monthBox').value);
+            second=month*30*24*60*60;
+            document.getElementById('outputDiv').innerHTML=
+            'Hey. '+month+' months is '+second+' seconds!';">
+      <hr>
+      <div id="outputDiv"></div>
+   </body>
+</html>
